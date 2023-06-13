@@ -1,0 +1,50 @@
+#Contact{
+    background-color: #F8F8F8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+        
+        font-weight: bold;
+        font-size: 35px;
+        flex-basis: 64%;
+        text-align: center;
+        margin: 50px 0px;
+        
+       
+    }
+    form{
+        margin: 50px 0px 100px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: center;
+        row-gap: 20px;
+     
+        input{
+            font-family: 'Playfair Display', serif; 
+            flex-basis: 100%;
+            padding: 10px;
+        }
+        textarea{
+            flex-basis: 100%;
+            font-family: 'Playfair Display', serif; 
+        }
+        button{
+            flex-basis: 100%;
+            padding: 10px;
+            background-color: #3E3E3E;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif; 
+        }
+        button:hover{
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 2px 2px 8px 2px rgb(1, 8, 73);
+            background-color: #0573f4;
+        }
+    }
+    
+}

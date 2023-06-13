@@ -1,0 +1,84 @@
+.Header-Container {
+    flex-basis: 100%;
+    background-color: #0573F4;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            padding: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            a.hovered {
+                color: red;
+            }
+
+            a:hover {
+                color: white;
+            }
+            
+        }
+
+        li:hover {
+            border-radius: 25px;
+        }
+    }
+
+    .viewport {
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cyclon {
+        background-image: linear-gradient(#0573F4, #000000);
+        color: white;
+        height: 100%;
+        width: 100%;
+        filter: brightness(7);
+        animation-duration: 3s;
+        animation-name: clignoter;
+        animation-iteration-count: infinite;
+        transition: none;
+    }
+
+
+    // KEYFRAME BARRE DEFILANTE BLEU  
+    @keyframes clignoter {
+        0% {
+            opacity: 1;
+        }
+
+        25% {
+            opacity: 0.75;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+        }
+        
+    
+    }
+
+
+
+    &.sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+}

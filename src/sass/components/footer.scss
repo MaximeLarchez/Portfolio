@@ -1,0 +1,27 @@
+#Footer{
+    background-color: #3E3E3E;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+    .LogoFooter{
+      
+        flex-basis: 100%;  
+        margin-bottom: 30px;
+        a{
+            color: white;
+            font-size: 40px;
+            margin: 0px 15px;
+        }
+    }
+    p{
+        
+        flex-basis: 100%;
+        font-size: 15px;
+        
+        
+    }
+}
+
