@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 
     .bloc-img {
-        width: 45%;
+        flex-basis: 45%;
 
         .ContainerImg {
             width: 100%;
@@ -26,12 +26,12 @@
         z-index: 1;
 
         h2 {
-            color: #0573F4;
+            color: #0573f4;
             text-align: center;
             font-size: 35px;
             flex-basis: 10%;
             font-weight: bold;
-            
+            margin: 30px;
         }
 
         ul {
@@ -46,85 +46,104 @@
                 font-size: 18px;
             }
 
+            .HTML.visible {
+                animation: animationcompetence 5s 0.1s;
+            }
+
+            .CSS.visible {
+                animation: animationcompetence 5s 0.2s;
+            }
+
+            .SASS.visible {
+                animation: animationcompetence 5s 0.3s;
+            }
+
+            .JavaScript.visible {
+                animation: animationcompetence 5s 0.4s;
+            }
+
+            .React.visible {
+                animation: animationcompetence 5s 0.5s;
+            }
+
+            .Apprentissage.visible {
+                animation: animationcompetence 5s 0.6s;
+            }
+
+            li:not(.visible) {
+                opacity: 0;
+            }
+
             .HTML {
-                animation: animationcompetence 3s 0.1s;
-                .logohtml {
-                    margin-right: 10px;
-                    font-size: 18px;
-                }
-
-                background-color: #E08600;
+                background-color: #e08600;
                 width: 90%;
-
             }
 
             .CSS {
-                animation: animationcompetence 3s 0.2s;
-                .logoCSS {
-                    margin-right: 10px;
-                    font-size: 18px;
-                }
-
-                background-color: #0A5193;
+                background-color: #0a5193;
                 width: 85%;
-
             }
 
             .SASS {
-                animation: animationcompetence 3s 0.3s;
-                .logoSass {
-                    margin-right: 10px;
-                    font-size: 18px;
-                }
-
-                background-color: #A60382;
+                background-color: #a60382;
                 width: 80%;
-
             }
 
             .JavaScript {
-                animation: animationcompetence 3s 0.4s;
-                .logoJS {
-                    margin-right: 10px;
-                    font-size: 18px;
-                }
-
-                background-color: #ECD50B;
+                background-color: #ecd50b;
                 width: 55%;
             }
 
             .React {
-                animation: animationcompetence 3s 0.5s;
-                .logoReact {
-                    margin-right: 10px;
-                    font-size: 18px;
-                }
-
-                background-color: #2A99FF;
+                background-color: #2a99ff;
                 width: 65%;
             }
 
             .Apprentissage {
-                animation: animationcompetence 3s 0.6s;
-                .logoWordpress {
-                    margin-right: 10px;
-                    font-size: 18px;
-                }
-
                 background-color: black;
                 justify-content: center;
+            }
+
+            .logohtml {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+            .logoCSS {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+            .logoSass {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+            .logoJS {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+            .logoReact {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+            .logoWordpress {
+                margin-right: 10px;
+                font-size: 18px;
             }
         }
     }
 }
 
-
-@keyframes animationcompetence{
-    from{
-        transform:translateY(30%);
+@keyframes animationcompetence {
+    from {
+        transform: translateY(50%);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0%);
         opacity: 1;
     }

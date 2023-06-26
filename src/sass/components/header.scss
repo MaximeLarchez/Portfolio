@@ -14,18 +14,22 @@
                 color: black;
                 font-weight: bold;
             }
-            a.hovered {
-                color: red;
-            }
 
             a:hover {
                 color: white;
             }
-            
-        }
 
-        li:hover {
-            border-radius: 25px;
+            // Styles pour le lien actif
+            &.nav-active {
+
+                background-color: rgb(255, 255, 255);
+                border-radius: 50px;
+
+                a:hover {
+                    color: black;
+
+                }
+            }
         }
     }
 
@@ -48,7 +52,6 @@
         transition: none;
     }
 
-
     // KEYFRAME BARRE DEFILANTE BLEU  
     @keyframes clignoter {
         0% {
@@ -70,11 +73,7 @@
         100% {
             opacity: 1;
         }
-        
-    
     }
-
-
 
     &.sticky-header {
         position: sticky;
